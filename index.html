@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Visual Instruction Tuning">
-  <meta name="keywords" content="multimodal chatbot">
+  <meta name="description" content="VLR-Bench">
+  <meta name="keywords" content="benchmark dataset">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VLR-Bench</title>
 
@@ -351,6 +351,9 @@
   </div>
 
 
+  <img src="./images/result_table.png" alt="VLR Bench result Table" style="height:250px; margin-bottom:10px;">
+
+
 
   <!-- </div> -->
   <!--/ Results. -->    
@@ -386,90 +389,6 @@
   </div>
 </section>
 
-
-
-<div class="container is-max-desktop">
-  <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 12px; border: 1px solid black;">
-    <thead>
-      <tr>
-        <th rowspan="2" style="border: 1px solid black;">Lang.</th>
-        <th rowspan="2" style="border: 1px solid black;">Model</th>
-        <th colspan="3" style="border: 1px solid black;">VLR-IF</th>
-        <th colspan="5" style="border: 1px solid black;">With Passages</th>
-        <th colspan="5" style="border: 1px solid black;">Without Passages</th>
-      </tr>
-      <tr>
-        <th style="border: 1px solid black;">EN</th>
-        <th style="border: 1px solid black;">ZH</th>
-        <th style="border: 1px solid black;">KO</th>
-        <th style="border: 1px solid black;">KMS</th>
-        <th style="border: 1px solid black;">R-2</th>
-        <th style="border: 1px solid black;">R-L</th>
-        <th style="border: 1px solid black;">BLEU</th>
-        <th style="border: 1px solid black;">B-Score</th>
-        <th style="border: 1px solid black;">KMS</th>
-        <th style="border: 1px solid black;">R-2</th>
-        <th style="border: 1px solid black;">R-L</th>
-        <th style="border: 1px solid black;">BLEU</th>
-        <th style="border: 1px solid black;">B-Score</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- EN Section -->
-      <tr>
-        <td rowspan="8" style="border: 1px solid black; font-weight: bold;">EN</td>
-        <td style="border: 1px solid black;">Llava1.5</td>
-        <td style="border: 1px solid black;">×</td>
-        <td style="border: 1px solid black;">×</td>
-        <td style="border: 1px solid black;">×</td>
-        <td style="border: 1px solid black;"><b>88.4</b></td>
-        <td style="border: 1px solid black;">26.0</td>
-        <td style="border: 1px solid black;">37.2</td>
-        <td style="border: 1px solid black;">14.7</td>
-        <td style="border: 1px solid black;">76.3</td>
-        <td style="border: 1px solid black;">25.6</td>
-        <td style="border: 1px solid black;">17.8</td>
-        <td style="border: 1px solid black;">30.4</td>
-        <td style="border: 1px solid black;">9.1</td>
-        <td style="border: 1px solid black;">73.4</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid black;">Llava-Llama-3</td>
-        <td style="border: 1px solid black;">×</td>
-        <td style="border: 1px solid black;">×</td>
-        <td style="border: 1px solid black;">×</td>
-        <td style="border: 1px solid black;">79.2</td>
-        <td style="border: 1px solid black;">25.4</td>
-        <td style="border: 1px solid black;">38.8</td>
-        <td style="border: 1px solid black;">13.5</td>
-        <td style="border: 1px solid black;">79.3</td>
-        <td style="border: 1px solid black;">20.4</td>
-        <td style="border: 1px solid black;">12.2</td>
-        <td style="border: 1px solid black;">23.8</td>
-        <td style="border: 1px solid black;">6.1</td>
-        <td style="border: 1px solid black;">73.4</td>
-      </tr>
-      <!-- More Rows -->
-      <tr>
-        <td style="border: 1px solid black;">GPT-4o</td>
-        <td style="border: 1px solid black;">×</td>
-        <td style="border: 1px solid black;">×</td>
-        <td style="border: 1px solid black;">×</td>
-        <td style="border: 1px solid black;">85.6</td>
-        <td style="border: 1px solid black;"><b>42.6</b></td>
-        <td style="border: 1px solid black;"><b>57.9</b></td>
-        <td style="border: 1px solid black;"><b>32.8</b></td>
-        <td style="border: 1px solid black;"><b>85.6</b></td>
-        <td style="border: 1px solid black;"><b>61.6</b></td>
-        <td style="border: 1px solid black;"><b>35.6</b></td>
-        <td style="border: 1px solid black;"><b>52.1</b></td>
-        <td style="border: 1px solid black;"><b>26.2</b></td>
-        <td style="border: 1px solid black;"><b>83.7</b></td>
-      </tr>
-      <!-- Repeat similar structure for ZH and KO sections -->
-    </tbody>
-  </table>
-</div>
 
 
 
