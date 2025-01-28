@@ -241,7 +241,7 @@
   <!-- Results. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3"><img id="painting_icon" width="3%" src="https://www.flaticon.com/free-icon/priority_9422946?term=document+search&page=1&position=17&origin=search&related_id=9422946"> VLR-Bench Dataset</h2>
+      <h2 class="title is-3"><img id="painting_icon" width="3%" src="https://cdn-icons-png.flaticon.com/512/9422/9422946.png"> VLR-Bench Dataset</h2>
     </div>
   </div>
   <!-- </div> -->
@@ -254,33 +254,25 @@
         <p>
           We manually selected 150 images from the BOK-VQA benchmark dataset and an additional 150 images reflecting the cultural elements of each language from Wikimedia Commons. Subsequently, we utilized the GPT-4o model with few-shot samples to create the VLR-Bench benchmark dataset. VLR-Bench is a parallel corpus consisting of English, Chinese, and Korean, with a total of 300 samples. The VLR-Bench dataset is available at the following link: 
           <a href="https://huggingface.co/datasets/MLP-KTLim/VLR-Bench">[HuggingFace Dataset]</a>.
-  
+        </p>
+        <p>
+          The following figures are examples from VLR-BENCH. Each example consists of a question, an answer, keywords, and passages. The “gold passage”, which contains the information necessary to answer the question, is highlighted in yellow.
         </p>
       </div>
-
-  
-
-
 
 
       <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">  
         <figure style="text-align: center;">
-          <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_instruction_verb_noun_50.png">  
+          <img id="teaser" width="100%" src="./images/vlr_bench_ex0.pdf">  
           <figcaption>
-            Instruction: Conversation [<a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_instruction_verb_noun_0.html">0</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_instruction_verb_noun_20.html">20</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/conversation_58k_instruction_verb_noun_50.html">50</a>]
+            Examples of the created VLR-Bench data. (English culture)
           </figcaption>
         </figure>
         <figure style="text-align: center;">
-          <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/detail_23k_instruction_verb_noun_0.png">  
+          <img id="teaser" width="100%" src="./images/vlr_bench_ex1.pdf">  
           <figcaption>
-            Instruction: Detailed Description  [<a href="images/LLaVA-Instruct-150K_noun_verb/detail_23k_instruction_verb_noun_0.html">0</a>]
-          </figcaption>
-        </figure>
-        <figure style="text-align: center;">
-          <img id="teaser" width="100%" src="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_instruction_verb_noun_50.png">  
-          <figcaption>
-            Instruction: Complex Reasoning   [<a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_instruction_verb_noun_0.html">0</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_instruction_verb_noun_20.html">20</a>, <a href="images/LLaVA-Instruct-150K_noun_verb/complex_reasoning_77k_instruction_verb_noun_50.html">50</a>]
+            Examples of the created VLR-Bench data. (commonsense knowledge)
           </figcaption>
         </figure>
       </div>
