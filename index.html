@@ -304,7 +304,7 @@
           Before conducting evaluations with our VLR-Bench, we built the VLR-IF (Instruction Following) dataset to ensure the model can extract accurate information from documents. A total of 9,000 images were randomly selected from the COCO image dataset. Following a process similar to the construction of VLR-Bench, we provided few-shot examples to GPT-4o to generate "valid passages." Subsequently, we used valid passages from other image samples as "invalid passages" and combined them to create a parallel corpus of 32,000 entries spanning English, Chinese, and Korean. This dataset is available at the following link:
           <a href="https://huggingface.co/datasets/MLP-KTLim/VLR-IF">[HuggingFace Dataset]</a>.
           Ultimately, we constructed a total of 32,000 datasets by combining valid and invalid passages in the following manner: {V}, {I}, {V, I}, {V, I, I}.
-          <li><b>${V}$</b>: <span style="font-size: 95%;">Only the valid passage, 9,000 datasets.</span></li>
+          <li><b>{V}</b>: <span style="font-size: 95%;">Only the valid passage, 9,000 datasets.</span></li>
           <li><b>{I}</b>: <span style="font-size: 95%;">Only one invalid passage, 5,000 datasets. In this case, the training data was constructed to output "Insufficient search results found, making inference impossible" when encountering such instances. 
           <li><b>{V, I}</b>: <span style="font-size: 95%;">One valid and one invalid passage, 9,000 datasets.
           <li><b>{V, I, I}</b>: <span style="font-size: 95%;">One valid and two invalid passages, 9,000 datasets.
@@ -318,7 +318,7 @@
               <figcaption>Examples of the created VLR-IF data.</figcaption>
             </figure>
             <figure style="text-align: center; width: 60%;">
-              <embed id="teaser" src="./images/vlr_if_process.png" width="100%" height="300px">
+              <embed id="teaser" src="./images/vlr_if_process.png" width="100%" height="500px">
               <figcaption>The process of constructing the VLR-IF dataset</figcaption>
             </figure>
           </div>
